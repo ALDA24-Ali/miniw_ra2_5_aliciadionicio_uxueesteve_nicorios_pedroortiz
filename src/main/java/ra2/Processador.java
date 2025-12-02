@@ -7,6 +7,8 @@ public class Processador implements Runnable {
         this.buffer = buffer;
     }
 
+    //Creem classe processador amb messagebuffer
+
     @Override
     public void run() {
         try {
@@ -19,4 +21,5 @@ public class Processador implements Runnable {
             System.out.println("Processador interromput");
         }
     }
+    //El processador treu missatges del buffer i els processa amb un delay de 300ms entre cada missatge
 }

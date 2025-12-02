@@ -9,6 +9,8 @@ public class Client implements Runnable {
         this.id = id;
     }
 
+    //Creem classe client amb messagebuffer i id
+
     @Override
     public void run() {
         try {
@@ -22,4 +24,5 @@ public class Client implements Runnable {
             System.out.println("Client " + id + " interromput");
         }
     }
+    //El client envia 5 missatges al buffer amb un delay de 500ms entre cada missatge
 }
