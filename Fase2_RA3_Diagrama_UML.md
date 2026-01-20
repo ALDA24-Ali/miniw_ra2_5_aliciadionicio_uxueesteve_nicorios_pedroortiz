@@ -120,26 +120,24 @@ ServidorMulticast (Envía cada 3 segundos)
 Client1  Client2                  Client3  Client...N
   ✓        ✓                         ✓      ✓
 ```
-
 ---
-
 ## Características de implementación:
 
 ### FITA 3 - UDP
-- ✅ Protocolo sin conexión
-- ✅ Datagramas independientes
-- ✅ Comunicación bidireccional
-- ✅ Puerto dinámico (cliente) / Fijo (servidor)
-- ✅ IP: localhost (127.0.0.1)
+-  Protocolo sin conexión
+-  Datagramas independientes
+-  Comunicación bidireccional
+-  Puerto dinámico (cliente) / Fijo (servidor)
+-  IP: localhost (127.0.0.1)
 
 ### FITA 4 - MULTICAST
-- ✅ Rango multicast: 224.0.0.0 - 239.255.255.255
-- ✅ Grupo: 230.0.0.1 (privado)
-- ✅ Puerto: 7000
-- ✅ Servidor envía continuamente
-- ✅ Múltiples clientes pueden recibir simultáneamente
-- ✅ Los clientes se unen al grupo (joinGroup)
-- ✅ Comunicación unidireccional (servidor → clientes)
+-  Rango multicast: 224.0.0.0 - 239.255.255.255
+-  Grupo: 230.0.0.1 (privado)
+-  Puerto: 7000
+-  Servidor envía continuamente
+-  Múltiples clientes pueden recibir simultáneamente
+-  Los clientes se unen al grupo (joinGroup)
+-  Comunicación unidireccional (servidor → clientes)
 
 ---
 
@@ -161,16 +159,16 @@ java -cp target/classes ra3.ProvaFase2.Fita4.ClientMulticast
 
 ## Consideraciones de Seguridad:
 
-1. ✅ Validación de direcciones multicast
-2. ✅ Manejo de excepciones (IOException, SocketException)
-3. ✅ Cierre de sockets con try-with-resources
-4. ✅ Sincronización en caso de acceso concurrente
-5. ⚠️ Considerar encriptación si es necesario (DTLS para UDP)
-6. ⚠️ Control de firewall en puertos 7000 y rango UDP
+1. Validación de direcciones multicast
+2. Manejo de excepciones (IOException, SocketException)
+3. Cierre de sockets con try-with-resources
+4. Sincronización en caso de acceso concurrente
+5. Considerar encriptación si es necesario (DTLS para UDP)
+6. Control de firewall en puertos 7000 y rango UDP
 
 ---
 
 **Sesión del 13 de enero de 2026**
-- Backend & Security: ✅ Implementación completada
+- Backend & Security:  Implementación completada
 - Tester: Pruebas con múltiples clientes
 - Documentador: Diagrama UML completado
